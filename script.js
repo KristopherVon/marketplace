@@ -58,15 +58,15 @@ document.getElementById('search-bar').addEventListener('input', function() {
 
 function showProductDetails(productName) {
     const products = {
-        'Rice': { img: '1.jpg', price: '₱50', description: 'Rice is a staple food in many countries.' },
-        'Corn': { img: '2.jpg', price: '₱50', description: 'Corn is rich in vitamins and minerals.' },
-        'Potato': { img: '3.jpg', price: '₱50', description: 'Potatoes are a good source of carbohydrates.' },
-        'Garlic': { img: '4.jpg', price: '₱50', description: 'Garlic is widely used for its strong flavor.' },
-        'Onion': { img: '5.jpg', price: '₱50', description: 'Onions are a common ingredient in many dishes.' },
-        'Ginger': { img: '6.jpg', price: '₱50', description: 'Ginger has anti-inflammatory properties.' },
-        'Sugarcane': { img: '7.jpg', price: '₱50', description: 'Sugarcane is the source of most sugar.' },
-        'Carrot': { img: '8.jpg', price: '₱50', description: 'Carrots are a great source of beta-carotene.' },
-        'Radish': { img: '9.jpg', price: '₱50', description: 'Radish is a crunchy, edible root vegetable.' }
+        'Rice': { img: '1.jpg', price: '₱44/kilo', description: 'Rice is a staple food in many countries.' },
+        'Corn': { img: '2.jpg', price: '₱46/kilo', description: 'Corn is rich in vitamins and minerals.' },
+        'Potato': { img: '3.jpg', price: '₱48/kilo', description: 'Potatoes are a good source of carbohydrates.' },
+        'Garlic': { img: '4.jpg', price: '₱50/kilo', description: 'Garlic is widely used for its strong flavor.' },
+        'Onion': { img: '5.jpg', price: '₱60/kilo', description: 'Onions are a common ingredient in many dishes.' },
+        'Ginger': { img: '6.jpg', price: '₱70/kilo', description: 'Ginger has anti-inflammatory properties.' },
+        'Sugarcane': { img: '7.jpg', price: '₱65/kilo', description: 'Sugarcane is the source of most sugar.' },
+        'Carrot': { img: '8.jpg', price: '₱60/kilo', description: 'Carrots are a great source of beta-carotene.' },
+        'Radish': { img: '9.jpg', price: '₱55/kilo', description: 'Radish is a crunchy, edible root vegetable.' }
     };
     
     const product = products[productName];
@@ -92,7 +92,7 @@ function renderSalesChart() {
             datasets: [
                 {
                     label: 'Series ', // First dataset label (for 2023)
-                    data: [120, 150, 180, 100, 90, 140, 160, 130, 110], // Series
+                    data: [44, 46, 48, 50, 60, 70, 65, 60, 55], // Series
                     backgroundColor: 'rgba(75, 192, 192, 0.2)', // Bar color
                     borderColor: 'rgba(75, 192, 192, 1)', // Bar border color
                     borderWidth: 1
